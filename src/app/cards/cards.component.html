@@ -1,0 +1,63 @@
+<div class="card mb-5 mb-lg-0">
+  <div class="card-body">
+    <h5 class="card-title text-muted text-uppercase text-center">
+      {{ myData.title }}
+    </h5>
+    <h6 class="card-price text-center">
+      {{ myData.price }}<span class="period">/month</span>
+    </h6>
+    <hr />
+    <ul class="fa-ul">
+      <li>
+        <span class="fa-li"><i class="fas fa-check"></i></span
+        ><span style="font-weight: bold" *ngIf="myData.point_1.bold">{{
+          myData.point_1.desc
+        }}</span>
+        <span *ngIf="!myData.point_1.bold">{{ myData.point_1.desc }}</span>
+      </li>
+      <li>
+        <span class="fa-li"><i class="fas fa-check"></i></span
+        >{{ myData.point_2 }}
+      </li>
+      <li>
+        <span class="fa-li"><i class="fas fa-check"></i></span
+        >{{ myData.point_3 }}
+      </li>
+      <li>
+        <span class="fa-li"><i class="fas fa-check"></i></span
+        >{{ myData.point_4 }}
+      </li>
+      <li>
+        <span class="fa-li"><i class="fas fa-times"></i></span>
+        <span class="text-muted" *ngIf="myData.point_5.color">{{
+          myData.point_5.desc
+        }}</span>
+        <span *ngIf="!myData.point_5.color">{{ myData.point_5.desc }}</span>
+      </li>
+      <li>
+        <span class="fa-li"><i class="fas fa-times"></i></span>
+        <span class="text-muted" *ngIf="myData.point_6.color">{{
+          myData.point_6.desc
+        }}</span>
+        <span *ngIf="!myData.point_6.color">{{ myData.point_6.desc }}</span>
+      </li>
+      <li>
+        <span class="fa-li"><i class="fas fa-times"></i></span>
+        <span class="text-muted" *ngIf="myData.point_7.color">{{
+          myData.point_7.desc
+        }}</span>
+        <span *ngIf="!myData.point_7.color">{{ myData.point_7.desc }}</span>
+      </li>
+      <li>
+        <span class="fa-li"><i class="fas fa-times"></i></span>
+        <span class="text-muted" *ngIf="myData.point_8.color">{{
+          myData.point_8.desc
+        }}</span>
+        <span *ngIf="!myData.point_8.color">{{ myData.point_8.desc }}</span>
+      </li>
+    </ul>
+    <div class="d-grid">
+      <a href="#" class="btn btn-primary text-uppercase">Button</a>
+    </div>
+  </div>
+</div>
